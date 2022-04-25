@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+		<meta name="description" content="Description of this web site">
+	  <meta name="author" content="Your Name Here">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Beerwerks Beer Trail</title>
+
+		<!-- Bootstrap v5.0.0-beta3 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <link href="css/custom.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        nav {
+        background-image: url(images/cheers.jpg);
+        color:#F2EDE4;
+        padding-top: 30px;
+        height:400px;
+        background-attachment: fixed;
+        background-position: bottom;
+        background-size: cover;
+        }  
+        .about {
+        font-family: 'Poppins', sans-serif;
+        color:#F2EDE4;
+        padding:50px;
+        }
+             
+    .nav2 {
+        font-family: 'Poppins', sans-serif;
+        color:#260505;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            display: inline;
+            float: right;
+        }
+        .nav-link {
+            padding:none;
+            text-decoration: none;
+        }
+        a:visited {
+            color:#F2EDE4;
+        }
+        .space {
+           height:40px;
+        }
+        .valley {
+        text-align:center;
+        padding:20px;
+        padding-top: 50px;
+        }
+        .button {
+            padding-top:20px;
+            text-align:left;
+            padding-left:40px;
+        }
+        .breweries {
+            text-align:center;
+            padding:30px;
+        }
+        .explore {
+            text-align: left;
+            padding-top:40px;
+            padding-left:40px;
+            color:#F2EDE4;
+        }
+        .container {
+        position: relative;
+        padding:30px;
+        width: 100%;
+        }
+        .container2 {
+        position: relative;
+        padding:30px;
+        width: 100%;
+        padding-bottom: 50px;
+        }
+        .image {
+        display: block;
+        width: auto;
+        height: auto;
+        }
+        .overlay {
+        position: absolute;
+        top: 60px;
+        bottom: 0;
+        left: 60px;
+        right: 0;
+        height: 300px;
+        width: 300px;
+        text-align: center;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: transparent;
+        font-family: 'Bebas Neue', cursive;
+        text-align: center;
+        padding:30px;
+        color:#260505;
+        background-color: #F2EDE4;
+        }
+
+        .container:hover .overlay {
+        opacity: 1;
+        }
+        .middle {
+            background-color:#F2EDE4;
+            height: 100px;
+        }
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size:60px;
+}
+.all {
+    padding-top:30px;
+    text-align: center;
+    color:#F2EDE4;
+    padding:20px;
+}
+    </style>
+    <body>
+        <!-- Navigation-->
+        <nav class="row">
+            <div class="col-md-12">
+                <div class="nav2">
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Breweries">Breweries</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Home</a>
+                </li>
+            </ul>
+            </div>
+            <div class="row">
+            <div class="heading">
+            <div class="col-md-12">
+                <h1>Beerwerks Beer Trail</h1>
+            </div>
+        </div>
+        </div>
+        </nav><!-- End Navigation -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="space">
+                </div>
+            </div>
+        </div><!-- End row 1 -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="explore">
+                    <h2>Start your beer trail and explore Harrisonburg's finest breweries!</h2>
+                </div>
+                <div class="button">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Get your passport!
+                      </button>
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Sign Up!</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <!-- add in the mentor description stuff in here-->
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">First Name</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter First Name">
+                                      </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Last Name</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Last Name">
+                                      </div>
+                                    <div class="form-group">
+                                      <label for="exampleInputEmail1">Email address</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="exampleInputPassword1">Password</label>
+                                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="form-check">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                  </form>
+                            </div>
+                            <div class="button2">
+                                </div>
+                            <div class="modal-footer">
+                                <div class="button2">
+                              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="col-md-4" id="Breweries">
+                    <div class="container">
+                    <a href="3notch.html"><img src="images/3notchd4.png" class="img-fluid" alt="Responsive image" width="100%"><div class="overlay"><h2>Three Notch'd Brewing</h2></div></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="container">
+                    <a href="friendly.html"><img src="images/friendlyfermenter5.jpg" class="img-fluid" alt="Responsive image" width="100%"><div class="overlay"><h2>The Freindly Fermenter</h2></div></a>
+                </div>
+            </div>
+        </div><!-- End row 2 -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="container">
+                    <a href="brothers.html"><img src="images/brothers3.jpg" class="img-fluid" alt="Responsive image" width="100%"><div class="overlay"><h2>Brothers Craft Brewing</h2></div></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="container">
+                    <a href="palefire.html"><img src="images/palefire1.jpg" class="img-fluid" alt="Responsive image" width="100%"><div class="overlay"><h2>Pale Fire Brewing</h2></div></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="container">
+                    <a href="moons.html"><img src="images/restlessmoons5.jpg" class="img-fluid" alt="Responsive image" width="100%"><div class="overlay"><h2>Restless Moons Brewing</h2></div></a>
+                </div>
+            </div>
+        </div><!-- End row 3 -->
+        <div class="row" id="about">
+            <div class="col-md-12">
+                <div class="all">
+                    <h2>All About Beerwerks Beer Trail</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+            <div class="about">
+                <span style="color:#F2EDE4;;font-family: 'Bebas Neue', cursive;font-size:30px;">The Shanendoah Valley</span> 
+                <p>The Shenandoah Valley is known for its beauty and adventure. The valley’s rolling hills stretch across the western side of Virginia, through towns like Harrisonburg, Lexington, Staunton and more. </p>
+                <p>While the Shenandoah Trail brings tourists to these smaller towns, the COVID-19 pandemic greatly impacted the livelihood of these towns and its citizens, as fewer people were visiting local shops, restaurants and breweries. The Shenandoah Beerwerks Trail Passport Program encourages people to visit local breweries in the Shenandoah Valley and spend time in these towns exploring shops, museums, historical landmarks and the beauty of the Shenandoah.</p>
+            </div><!-- End about -->
+        </div><!-- End column 1 -->
+            <div class="col-md-6">
+                <div class="valley">
+                    <img src="images/valley.jpg" class="img-fluid" alt="Responsive image" width="100%">
+            </div>
+        </div><!-- End column 2 -->
+        </div><!-- End row 2 -->
+        <div class="row">
+            <div class="col-md-6">
+            <div class="valley">
+                <img src="images/people.jpg" class="img-fluid" alt="Responsive image" width="100%">
+        </div>
+    </div>
+            <div class="col-md-6">
+                <div class="about">
+                    <span style="color:#F2EDE4;font-family: 'Bebas Neue', cursive;font-size:30px;">Get your passports ready!</span> 
+                <p>The premise of the passport program is simple: drink beer. To participate, all one needs to do is visit any eight of the eighteen participating breweries (found here), drink a craft beer at each location, get your passport stamped, mail it in and you’ll receive a free t-shirt. Each brewery will have different events, such as food trucks and live music, that help other small businesses stay afloat.</p>
+                <p>Harrisonburg, Va. is home to five breweries participating in the passport program: Brother’s Craft Brewing, The Friendly Fermenter, Pale Fire Brewing Co., Three Notch’d Valley Collab House and Restless Moons Brewing Company. Each brewery provides a unique environment to relax, unwind and enjoy a refreshing craft beer. Restless Moons has an envious collection of board games and corn hole; Pale Fire has a wall of bookshelves and vinyl records; enjoying a beer at Three Notch’d feels like relaxing in a cozy coffee shop; The Friendly Fermenter is a social underground brewery; and Brother’s Craft is rustic and intimate and has private rooms for larger groups.</p>
+            </div>
+        </div>
+        </div><!-- End row 3 -->
+    </div><!-- End row container-fluid -->
+     <!-- Footer -->
+        <footer class="text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer">
+                        <p>Beerwerks Beer Trail</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
